@@ -9,7 +9,7 @@ public class DiscountCalculator {
 
         double discount = calculateDiscount(amount, premiumCustomer);
 
-        return (amount * discount);
+        return amount - (amount * discount);
     }
 
     private void validateAmount(double amount) {
